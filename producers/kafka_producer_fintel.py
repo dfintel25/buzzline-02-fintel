@@ -1,5 +1,5 @@
 """
-kafka_producer_case.py
+kafka_producer_fintel.py
 
 Produce some streaming buzz strings and send them to a Kafka topic.
 """
@@ -23,7 +23,6 @@ from utils.utils_producer import (
     create_kafka_topic,
 )
 from utils.utils_logger import logger
-
 
 
 #####################################
