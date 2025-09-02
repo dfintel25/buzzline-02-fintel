@@ -105,6 +105,20 @@ source .venv/bin/activate
 python3 -m consumers.kafka_consumer_case
 ```
 
+## Task 5. New Producer function!
+Windows:
+```shell
+.venv\Scripts\activate
+py -m consumers.kafka_producer_fintel
+```
+
+## Task 6. New Consumer function!
+Windows:
+```shell
+.venv\Scripts\activate
+py -m consumers.kafka_consumer_fintel
+```
+
 ## Later Work Sessions
 
 When resuming work on this project:
