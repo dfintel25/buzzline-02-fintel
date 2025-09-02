@@ -1,5 +1,5 @@
 """
-kafka_consumer_case.py
+kafka_consumer_fintel.py
 
 Consume messages from a Kafka topic and process them.
 """
