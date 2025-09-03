@@ -109,7 +109,7 @@ python3 -m consumers.kafka_consumer_case
 Windows:
 ```shell
 .venv\Scripts\activate
-py -m consumers.kafka_producer_fintel
+py -m producers.kafka_producer_fintel
 ```
 
 ## Task 6. New Consumer function!

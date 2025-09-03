@@ -165,3 +165,61 @@
 2025-09-01 14:16:52 | WARNING | Producer interrupted by user.
 2025-09-01 14:16:52 | INFO | Kafka producer closed.
 2025-09-01 14:16:52 | INFO | END producer.
+2025-09-02 19:31:44 | INFO | Logging to file: logs/project_log.log
+2025-09-02 19:31:44 | INFO | Log sanitization enabled, personal info will be removed
+2025-09-02 19:31:44 | INFO | START producer.
+2025-09-02 19:31:44 | INFO | Loading environment variables from .env file...
+2025-09-02 19:31:44 | INFO | Kafka broker address: localhost:9092
+2025-09-02 19:31:45 | INFO | Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 1, 'host': 'localhost', 'port': 9092, 'rack': None}], 'cluster_id': '9kkXJrFlSGy2jdYknxxKCw', 'controller_id': 1}
+2025-09-02 19:31:45 | INFO | Kafka topic: buzzline
+2025-09-02 19:31:45 | INFO | Message interval: 1 seconds
+2025-09-02 19:31:45 | INFO | Kafka broker address: localhost:9092
+2025-09-02 19:31:45 | INFO | Connecting to Kafka broker at localhost:9092...
+2025-09-02 19:31:45 | INFO | Kafka producer successfully created.
+2025-09-02 19:31:45 | INFO | Kafka broker address: localhost:9092
+2025-09-02 19:31:45 | INFO | Topic 'buzzline' already exists. Clearing it out...
+2025-09-02 19:31:45 | INFO | Kafka broker address: localhost:9092
+2025-09-02 19:31:46 | ERROR | Error managing retention for topic 'buzzline': list indices must be integers or slices, not ConfigResource
+2025-09-02 19:31:46 | INFO | Kafka topic 'buzzline' is ready.
+2025-09-02 19:31:46 | INFO | Starting message production to topic 'buzzline'...
+2025-09-02 19:31:46 | INFO | Generated buzz: I love Python!
+2025-09-02 19:31:46 | INFO | Sent message to topic 'buzzline': I love Python!
+2025-09-02 19:31:47 | INFO | Generated buzz: Kafka is awesome.
+2025-09-02 19:31:47 | INFO | Sent message to topic 'buzzline': Kafka is awesome.
+2025-09-02 19:31:48 | INFO | Generated buzz: Streaming data is fun.
+2025-09-02 19:31:48 | INFO | Sent message to topic 'buzzline': Streaming data is fun.
+2025-09-02 19:31:49 | INFO | Generated buzz: This is a buzz message.
+2025-09-02 19:31:49 | INFO | Sent message to topic 'buzzline': This is a buzz message.
+2025-09-02 19:31:50 | INFO | Generated buzz: Have a great day!
+2025-09-02 19:31:50 | INFO | Sent message to topic 'buzzline': Have a great day!
+2025-09-02 19:31:51 | INFO | Generated buzz: I love Python!
+2025-09-02 19:31:51 | INFO | Sent message to topic 'buzzline': I love Python!
+2025-09-02 19:31:52 | INFO | Generated buzz: Kafka is awesome.
+2025-09-02 19:31:52 | INFO | Sent message to topic 'buzzline': Kafka is awesome.
+2025-09-02 19:31:52 | WARNING | Producer interrupted by user.
+2025-09-02 19:31:52 | INFO | Kafka producer closed.
+2025-09-02 19:31:52 | INFO | END producer.
+2025-09-02 19:32:02 | INFO | Logging to file: logs/project_log.log
+2025-09-02 19:32:02 | INFO | Log sanitization enabled, personal info will be removed
+2025-09-02 19:32:02 | INFO | START consumer.
+2025-09-02 19:32:02 | INFO | Kafka topic: buzzline
+2025-09-02 19:32:02 | INFO | Kafka consumer group id: default_group
+2025-09-02 19:32:02 | INFO | Consumer: Topic 'buzzline' and group 'default_group'...
+2025-09-02 19:32:02 | INFO | Kafka broker address: localhost:9092
+2025-09-02 19:32:02 | INFO | Creating Kafka consumer. Topic='buzzline' and group ID='default_group'.
+2025-09-02 19:32:02 | INFO | Kafka consumer created successfully.
+2025-09-02 19:32:02 | INFO | Polling messages from topic 'buzzline'...
+2025-09-02 19:32:06 | INFO | Processing message: Kafka is awesome.
+2025-09-02 19:32:06 | INFO | Processing message: Streaming data is fun.
+2025-09-02 19:32:06 | INFO | Processing message: This is a buzz message.
+2025-09-02 19:32:06 | INFO | Processing message: Have a great day!
+2025-09-02 19:32:06 | INFO | Processing message: I love Python!
+2025-09-02 19:32:06 | INFO | Processing message: Kafka is awesome.
+2025-09-02 19:32:06 | INFO | Processing message: Streaming data is fun.
+2025-09-02 19:32:06 | INFO | Processing message: This is a buzz message.
+2025-09-02 19:32:06 | INFO | Processing message: Have a great day!
+2025-09-02 19:32:06 | INFO | Processing message: I love Python!
+2025-09-02 19:32:06 | INFO | Processing message: Kafka is awesome.
+2025-09-02 19:32:10 | WARNING | Consumer interrupted by user.
+2025-09-02 19:32:10 | INFO | Kafka consumer for topic 'buzzline' closed.
+2025-09-02 19:32:10 | INFO | END consumer for topic 'buzzline' and group 'default_group'.
