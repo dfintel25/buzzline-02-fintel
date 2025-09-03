@@ -93,3 +93,42 @@
 {'timestamp': '2025-09-03T01:29:25.243103+00:00', 'message': 'Kafka is awesome.'}
 {'timestamp': '2025-09-03T01:29:26.246907+00:00', 'message': 'Streaming data is fun.'}
 {'timestamp': '2025-09-03T01:29:27.250146+00:00', 'message': 'This is a buzz message.'}
+{'timestamp': '2025-09-03T01:29:28.253996+00:00', 'message': 'Have a great day!'}
+{'timestamp': '2025-09-03T01:29:29.259560+00:00', 'message': 'I love Python!'}
+{'timestamp': '2025-09-03T01:29:30.264848+00:00', 'message': 'Kafka is awesome.'}
+{'timestamp': '2025-09-03T01:29:31.266255+00:00', 'message': 'Streaming data is fun.'}
+{'timestamp': '2025-09-03T01:29:32.270970+00:00', 'message': 'This is a buzz message.'}
+{'timestamp': '2025-09-03T01:29:33.272998+00:00', 'message': 'Have a great day!'}
+{'timestamp': '2025-09-03T01:29:34.276277+00:00', 'message': 'I love Python!'}
+{'timestamp': '2025-09-03T01:29:35.278058+00:00', 'message': 'Kafka is awesome.'}
+{'timestamp': '2025-09-03T01:29:36.283164+00:00', 'message': 'Streaming data is fun.'}
+{'timestamp': '2025-09-03T01:29:37.288725+00:00', 'message': 'This is a buzz message.'}
+{'timestamp': '2025-09-03T01:29:38.291892+00:00', 'message': 'Have a great day!'}
+{'timestamp': '2025-09-03T01:29:39.296887+00:00', 'message': 'I love Python!'}
+{'timestamp': '2025-09-03T01:29:40.302505+00:00', 'message': 'Kafka is awesome.'}
+{'timestamp': '2025-09-03T01:29:41.308833+00:00', 'message': 'Streaming data is fun.'}
+{'timestamp': '2025-09-03T01:29:42.313877+00:00', 'message': 'This is a buzz message.'}
+{'timestamp': '2025-09-03T01:29:43.315974+00:00', 'message': 'Have a great day!'}
+{'timestamp': '2025-09-03T01:29:44.320434+00:00', 'message': 'I love Python!'}
+{'timestamp': '2025-09-03T01:29:45.325708+00:00', 'message': 'Kafka is awesome.'}
+{'timestamp': '2025-09-03T01:29:46.329722+00:00', 'message': 'Streaming data is fun.'}
+{'timestamp': '2025-09-03T01:29:47.333030+00:00', 'message': 'This is a buzz message.'}
+{'timestamp': '2025-09-03T01:29:48.337952+00:00', 'message': 'Have a great day!'}
+{'timestamp': '2025-09-03T01:29:49.343710+00:00', 'message': 'I love Python!'}
+{'timestamp': '2025-09-03T01:29:50.352458+00:00', 'message': 'Kafka is awesome.'}
+{'timestamp': '2025-09-03T01:29:51.356709+00:00', 'message': 'Streaming data is fun.'}
+{'timestamp': '2025-09-03T01:29:52.360067+00:00', 'message': 'This is a buzz message.'}
+{'timestamp': '2025-09-03T01:29:53.363554+00:00', 'message': 'Have a great day!'}
+{'timestamp': '2025-09-03T01:29:54.371626+00:00', 'message': 'I love Python!'}
+{'timestamp': '2025-09-03T01:29:55.377130+00:00', 'message': 'Kafka is awesome.'}
+{'timestamp': '2025-09-03T01:29:56.380717+00:00', 'message': 'Streaming data is fun.'}
+{'timestamp': '2025-09-03T01:29:57.383666+00:00', 'message': 'This is a buzz message.'}
+{'timestamp': '2025-09-03T01:29:58.389477+00:00', 'message': 'Have a great day!'}
+{'timestamp': '2025-09-03T01:29:59.394160+00:00', 'message': 'I love Python!'}
+{'timestamp': '2025-09-03T01:30:00.397755+00:00', 'message': 'Kafka is awesome.'}
+{'timestamp': '2025-09-03T01:30:01.401819+00:00', 'message': 'Streaming data is fun.'}
+{'timestamp': '2025-09-03T01:30:02.406463+00:00', 'message': 'This is a buzz message.'}
+{'timestamp': '2025-09-03T01:30:03.411677+00:00', 'message': 'Have a great day!'}
+{'timestamp': '2025-09-03T01:30:04.418633+00:00', 'message': 'I love Python!'}
+{'timestamp': '2025-09-03T01:30:05.424187+00:00', 'message': 'Kafka is awesome.'}
+{'timestamp': '2025-09-03T01:30:06.429859+00:00', 'message': 'Streaming data is fun.'}
