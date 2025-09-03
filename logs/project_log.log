@@ -223,3 +223,37 @@
 2025-09-02 20:30:06 | WARNING | Producer interrupted by user.
 2025-09-02 20:30:06 | INFO | Kafka producer closed.
 2025-09-02 20:30:06 | INFO | END producer.
+2025-09-03 18:28:24 | INFO | Logging to file: logs/project_log.log
+2025-09-03 18:28:24 | INFO | Log sanitization enabled, personal info will be removed
+2025-09-03 18:28:24 | INFO | START producer.
+2025-09-03 18:28:24 | INFO | Loading environment variables from .env file...
+2025-09-03 18:28:24 | INFO | Kafka broker address: localhost:9092
+2025-09-03 18:28:24 | INFO | Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 1, 'host': 'localhost', 'port': 9092, 'rack': None}], 'cluster_id': '9kkXJrFlSGy2jdYknxxKCw', 'controller_id': 1}
+2025-09-03 18:28:24 | INFO | Kafka topic: buzzline
+2025-09-03 18:28:24 | INFO | Message interval: 1 seconds
+2025-09-03 18:28:24 | INFO | Kafka broker address: localhost:9092
+2025-09-03 18:28:24 | INFO | Connecting to Kafka broker at localhost:9092...
+2025-09-03 18:28:24 | INFO | Kafka producer successfully created.
+2025-09-03 18:28:24 | INFO | Kafka broker address: localhost:9092
+2025-09-03 18:28:25 | INFO | Topic 'buzzline' already exists. Clearing it out...
+2025-09-03 18:28:25 | INFO | Kafka broker address: localhost:9092
+2025-09-03 18:28:25 | ERROR | Error managing retention for topic 'buzzline': list indices must be integers or slices, not ConfigResource
+2025-09-03 18:28:25 | INFO | Kafka topic 'buzzline' is ready.
+2025-09-03 18:28:25 | INFO | Starting message production to topic 'buzzline'...
+2025-09-03 18:28:25 | INFO | Generated buzz: {'timestamp': '2025-09-03T23:28:25.566115+00:00', 'message': 'I love Python!'}
+2025-09-03 18:28:25 | INFO | Sent message to topic 'buzzline': {'timestamp': '2025-09-03T23:28:25.566115+00:00', 'message': 'I love Python!'}
+2025-09-03 18:28:26 | INFO | Generated buzz: {'timestamp': '2025-09-03T23:28:26.620204+00:00', 'message': 'Kafka is awesome.'}
+2025-09-03 18:28:26 | INFO | Sent message to topic 'buzzline': {'timestamp': '2025-09-03T23:28:26.620204+00:00', 'message': 'Kafka is awesome.'}
+2025-09-03 18:28:27 | INFO | Generated buzz: {'timestamp': '2025-09-03T23:28:27.622370+00:00', 'message': 'Streaming data is fun.'}
+2025-09-03 18:28:27 | INFO | Sent message to topic 'buzzline': {'timestamp': '2025-09-03T23:28:27.622370+00:00', 'message': 'Streaming data is fun.'}
+2025-09-03 18:28:28 | INFO | Generated buzz: {'timestamp': '2025-09-03T23:28:28.627269+00:00', 'message': 'This is a buzz message.'}
+2025-09-03 18:28:28 | INFO | Sent message to topic 'buzzline': {'timestamp': '2025-09-03T23:28:28.627269+00:00', 'message': 'This is a buzz message.'}
+2025-09-03 18:28:29 | INFO | Generated buzz: {'timestamp': '2025-09-03T23:28:29.634292+00:00', 'message': 'Have a great day!'}
+2025-09-03 18:28:29 | INFO | Sent message to topic 'buzzline': {'timestamp': '2025-09-03T23:28:29.634292+00:00', 'message': 'Have a great day!'}
+2025-09-03 18:28:30 | INFO | Generated buzz: {'timestamp': '2025-09-03T23:28:30.639817+00:00', 'message': 'I love Python!'}
+2025-09-03 18:28:30 | INFO | Sent message to topic 'buzzline': {'timestamp': '2025-09-03T23:28:30.639817+00:00', 'message': 'I love Python!'}
+2025-09-03 18:28:31 | INFO | Generated buzz: {'timestamp': '2025-09-03T23:28:31.643962+00:00', 'message': 'Kafka is awesome.'}
+2025-09-03 18:28:31 | INFO | Sent message to topic 'buzzline': {'timestamp': '2025-09-03T23:28:31.643962+00:00', 'message': 'Kafka is awesome.'}
+2025-09-03 18:28:32 | WARNING | Producer interrupted by user.
+2025-09-03 18:28:32 | INFO | Kafka producer closed.
+2025-09-03 18:28:32 | INFO | END producer.
