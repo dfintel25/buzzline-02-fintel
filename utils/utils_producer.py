@@ -1,19 +1,14 @@
-"""
-utils_producer.py - common functions used by producers.
-
-Producers send messages to a Kafka topic.
-"""
+# utils_producer.py - common functions used by producers.
 
 #####################################
 # Import Modules
 #####################################
 
-# Import packages from Python Standard Library
 import os
 import sys
 import time
+import json
 
-# Import external packages
 from dotenv import load_dotenv
 from kafka import KafkaProducer, KafkaConsumer, errors
 from kafka.admin import (
@@ -23,7 +18,6 @@ from kafka.admin import (
     NewTopic,
 )
 
-# Import functions from local modules
 from utils.utils_logger import logger
 
 
@@ -33,14 +27,13 @@ from utils.utils_logger import logger
 
 DEFAULT_KAFKA_BROKER_ADDRESS = "localhost:9092"
 
+
 #####################################
 # Helper Functions
 #####################################
 
-
 def get_kafka_broker_address():
-    """Fetch Kafka broker address from environment or use default."""
-    broker_address = os.getenv("KAFKA_BROKER_ADDRESS", "localhost:9092")
+    broker_address = os.getenv("KAFKA_BROKER_ADDRESS", DEFAULT_KAFKA_BROKER_ADDRESS)
     logger.info(f"Kafka broker address: {broker_address}")
     return broker_address
 
@@ -49,16 +42,8 @@ def get_kafka_broker_address():
 # Kafka Readiness Check
 #####################################
 
-
 def check_kafka_service_is_ready():
-    """
-    Check if Kafka is ready by connecting to the broker and fetching metadata.
-
-    Returns:
-        bool: True if Kafka is ready, False otherwise.
-    """
     kafka_broker = get_kafka_broker_address()
-
     try:
         admin_client = KafkaAdminClient(bootstrap_servers=kafka_broker)
         brokers = admin_client.describe_cluster()
@@ -74,33 +59,22 @@ def check_kafka_service_is_ready():
 # Kafka Producer and Topic Management
 #####################################
 
-
 def verify_services():
-    # Verify Kafka is ready
     if not check_kafka_service_is_ready():
-        logger.error(
-            "Kafka broker is not ready. Please check your Kafka setup. Exiting..."
-        )
+        logger.error("Kafka broker is not ready. Exiting...")
         sys.exit(2)
 
 
 def create_kafka_producer(value_serializer=None):
     """
     Create and return a Kafka producer instance.
-
-    Args:
-        value_serializer (callable): A custom serializer for message values.
-                                     Defaults to UTF-8 string encoding.
-
-    Returns:
-        KafkaProducer: Configured Kafka producer instance.
+    Default serializer: JSON → UTF-8 bytes
     """
     kafka_broker = get_kafka_broker_address()
 
     if value_serializer is None:
-
         def value_serializer(x):
-            return x.encode("utf-8")  # Default to string serialization
+            return json.dumps(x).encode("utf-8")
 
     try:
         logger.info(f"Connecting to Kafka broker at {kafka_broker}...")
@@ -116,68 +90,39 @@ def create_kafka_producer(value_serializer=None):
 
 
 def create_kafka_topic(topic_name, group_id=None):
-    """
-    Create a fresh Kafka topic with the given name.
-    Args:
-        topic_name (str): Name of the Kafka topic.
-    """
     kafka_broker = get_kafka_broker_address()
-
     try:
         admin_client = KafkaAdminClient(bootstrap_servers=kafka_broker)
-
-        # Check if the topic exists
         topics = admin_client.list_topics()
         if topic_name in topics:
             logger.info(f"Topic '{topic_name}' already exists. Clearing it out...")
             clear_kafka_topic(topic_name, group_id)
-
         else:
             logger.info(f"Creating '{topic_name}'.")
-            new_topic = NewTopic(
-                name=topic_name, num_partitions=1, replication_factor=1
-            )
+            new_topic = NewTopic(name=topic_name, num_partitions=1, replication_factor=1)
             admin_client.create_topics([new_topic])
             logger.info(f"Topic '{topic_name}' created successfully.")
-
     except Exception as e:
         logger.error(f"Error managing topic '{topic_name}': {e}")
         sys.exit(1)
-
     finally:
         admin_client.close()
 
 
 def clear_kafka_topic(topic_name, group_id):
-    """
-    Consume and discard all messages in the Kafka topic to clear it.
-
-    Args:
-        topic_name (str): Name of the Kafka topic.
-        group_id (str): Consumer group ID.
-    """
     kafka_broker = get_kafka_broker_address()
     admin_client = KafkaAdminClient(bootstrap_servers=kafka_broker)
-
     try:
-        # Fetch the current retention period
         config_resource = ConfigResource(ConfigResourceType.TOPIC, topic_name)
         configs = admin_client.describe_configs([config_resource])
-        original_retention = configs[config_resource].get(
-            "retention.ms", "604800000"
-        )  # Default to 7 days
-        logger.info(
-            f"Original retention.ms for topic '{topic_name}': {original_retention}"
-        )
+        original_retention = configs[config_resource].get("retention.ms", "604800000")
+        logger.info(f"Original retention.ms for '{topic_name}': {original_retention}")
 
-        # Temporarily set retention to 1ms
         admin_client.alter_configs({config_resource: {"retention.ms": "1"}})
-        logger.info(f"Retention.ms temporarily set to 1ms for topic '{topic_name}'.")
+        logger.info(f"Retention.ms temporarily set to 1ms for '{topic_name}'.")
 
-        # Wait a moment for Kafka to apply retention and delete old data
         time.sleep(2)
 
-        # Clear remaining messages by consuming and discarding them
         logger.info(f"Clearing topic '{topic_name}' by consuming all messages...")
         consumer = KafkaConsumer(
             topic_name,
@@ -191,14 +136,8 @@ def clear_kafka_topic(topic_name, group_id):
         consumer.close()
         logger.info(f"All messages cleared from topic '{topic_name}'.")
 
-        # Restore the original retention period
-        admin_client.alter_configs(
-            {config_resource: {"retention.ms": original_retention}}
-        )
-        logger.info(
-            f"Retention.ms restored to {original_retention} for topic '{topic_name}'."
-        )
-
+        admin_client.alter_configs({config_resource: {"retention.ms": original_retention}})
+        logger.info(f"Retention.ms restored for '{topic_name}'.")
     except Exception as e:
         logger.error(f"Error managing retention for topic '{topic_name}': {e}")
     finally:
@@ -209,27 +148,18 @@ def clear_kafka_topic(topic_name, group_id):
 # Main Function for Testing
 #####################################
 
-
 def main():
-    """
-    Main entry point.
-    """
-
     logger.info("Starting utils_producer.py script...")
     logger.info("Loading environment variables from .env file...")
     load_dotenv()
 
     if not check_kafka_service_is_ready():
-        logger.error("Kafka is not ready. Check .env file and ensure Kafka is running.")
+        logger.error("Kafka is not ready. Exiting.")
         sys.exit(2)
 
-    logger.info("All services are ready. Proceed with producer setup.")
+    logger.info("All services are ready. Proceeding with producer setup.")
     create_kafka_topic("test_topic", "default_group")
 
-
-#####################################
-# Conditional Execution
-#####################################
 
 if __name__ == "__main__":
     main()

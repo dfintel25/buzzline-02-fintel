@@ -223,3 +223,67 @@
 2025-09-02 19:32:10 | WARNING | Consumer interrupted by user.
 2025-09-02 19:32:10 | INFO | Kafka consumer for topic 'buzzline' closed.
 2025-09-02 19:32:10 | INFO | END consumer for topic 'buzzline' and group 'default_group'.
+2025-09-02 19:53:02 | INFO | Logging to file: logs/project_log.log
+2025-09-02 19:53:02 | INFO | Log sanitization enabled, personal info will be removed
+2025-09-02 19:53:02 | INFO | START producer.
+2025-09-02 19:53:02 | INFO | Loading environment variables from .env file...
+2025-09-02 19:53:02 | INFO | Kafka broker address: localhost:9092
+2025-09-02 19:53:02 | INFO | Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 1, 'host': 'localhost', 'port': 9092, 'rack': None}], 'cluster_id': '9kkXJrFlSGy2jdYknxxKCw', 'controller_id': 1}
+2025-09-02 19:53:02 | INFO | Kafka topic: buzzline
+2025-09-02 19:53:02 | INFO | Message interval: 1 seconds
+2025-09-02 19:53:02 | INFO | Kafka broker address: localhost:9092
+2025-09-02 19:53:02 | INFO | Connecting to Kafka broker at localhost:9092...
+2025-09-02 19:53:03 | INFO | Kafka producer successfully created.
+2025-09-02 19:53:03 | INFO | Kafka broker address: localhost:9092
+2025-09-02 19:53:03 | INFO | Topic 'buzzline' already exists. Clearing it out...
+2025-09-02 19:53:03 | INFO | Kafka broker address: localhost:9092
+2025-09-02 19:53:03 | ERROR | Error managing retention for topic 'buzzline': list indices must be integers or slices, not ConfigResource
+2025-09-02 19:53:03 | INFO | Kafka topic 'buzzline' is ready.
+2025-09-02 19:53:03 | INFO | Starting message production to topic 'buzzline'...
+2025-09-02 19:53:03 | INFO | Generated buzz: {'timestamp': '2025-09-03T00:53:03.817926', 'message': 'I love Python!'}
+2025-09-02 19:53:03 | ERROR | Error in message generation: 'bytes' object has no attribute 'encode'
+2025-09-02 19:53:03 | INFO | Kafka producer closed.
+2025-09-02 19:53:03 | INFO | END producer.
+2025-09-02 19:53:07 | INFO | Logging to file: logs/project_log.log
+2025-09-02 19:53:07 | INFO | Log sanitization enabled, personal info will be removed
+2025-09-02 19:53:07 | INFO | START producer.
+2025-09-02 19:53:07 | INFO | Loading environment variables from .env file...
+2025-09-02 19:53:07 | INFO | Kafka broker address: localhost:9092
+2025-09-02 19:53:07 | INFO | Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 1, 'host': 'localhost', 'port': 9092, 'rack': None}], 'cluster_id': '9kkXJrFlSGy2jdYknxxKCw', 'controller_id': 1}
+2025-09-02 19:53:07 | INFO | Kafka topic: buzzline
+2025-09-02 19:53:07 | INFO | Message interval: 1 seconds
+2025-09-02 19:53:07 | INFO | Kafka broker address: localhost:9092
+2025-09-02 19:53:07 | INFO | Connecting to Kafka broker at localhost:9092...
+2025-09-02 19:53:08 | INFO | Kafka producer successfully created.
+2025-09-02 19:53:08 | INFO | Kafka broker address: localhost:9092
+2025-09-02 19:53:08 | INFO | Topic 'buzzline' already exists. Clearing it out...
+2025-09-02 19:53:08 | INFO | Kafka broker address: localhost:9092
+2025-09-02 19:53:08 | ERROR | Error managing retention for topic 'buzzline': list indices must be integers or slices, not ConfigResource
+2025-09-02 19:53:08 | INFO | Kafka topic 'buzzline' is ready.
+2025-09-02 19:53:08 | INFO | Starting message production to topic 'buzzline'...
+2025-09-02 19:53:08 | INFO | Generated buzz: {'timestamp': '2025-09-03T00:53:08.700987', 'message': 'I love Python!'}
+2025-09-02 19:53:08 | ERROR | Error in message generation: 'bytes' object has no attribute 'encode'
+2025-09-02 19:53:08 | INFO | Kafka producer closed.
+2025-09-02 19:53:08 | INFO | END producer.
+2025-09-02 20:04:41 | INFO | Logging to file: logs/project_log.log
+2025-09-02 20:04:41 | INFO | Log sanitization enabled, personal info will be removed
+2025-09-02 20:04:41 | INFO | START producer.
+2025-09-02 20:04:41 | INFO | Loading environment variables from .env file...
+2025-09-02 20:04:41 | INFO | Kafka broker address: localhost:9092
+2025-09-02 20:04:41 | INFO | Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 1, 'host': 'localhost', 'port': 9092, 'rack': None}], 'cluster_id': '9kkXJrFlSGy2jdYknxxKCw', 'controller_id': 1}
+2025-09-02 20:04:41 | INFO | Kafka topic: buzzline
+2025-09-02 20:04:41 | INFO | Message interval: 1 seconds
+2025-09-02 20:04:41 | INFO | Kafka broker address: localhost:9092
+2025-09-02 20:04:41 | INFO | Connecting to Kafka broker at localhost:9092...
+2025-09-02 20:04:42 | INFO | Kafka producer successfully created.
+2025-09-02 20:04:42 | INFO | Kafka broker address: localhost:9092
+2025-09-02 20:04:42 | INFO | Topic 'buzzline' already exists. Clearing it out...
+2025-09-02 20:04:42 | INFO | Kafka broker address: localhost:9092
+2025-09-02 20:04:42 | ERROR | Error managing retention for topic 'buzzline': list indices must be integers or slices, not ConfigResource
+2025-09-02 20:04:42 | INFO | Kafka topic 'buzzline' is ready.
+2025-09-02 20:04:42 | INFO | Starting message production to topic 'buzzline'...
+2025-09-02 20:04:42 | INFO | Generated buzz: {'timestamp': '2025-09-03T01:04:42.784614+00:00', 'message': 'I love Python!'}
+2025-09-02 20:04:42 | INFO | Sent message to topic 'buzzline': {'timestamp': '2025-09-03T01:04:42.784614+00:00', 'message': 'I love Python!'}
+2025-09-02 20:04:42 | ERROR | Error in message generation: descriptor 'time' for 'datetime.datetime' objects doesn't apply to a 'int' object
+2025-09-02 20:04:42 | INFO | Kafka producer closed.
+2025-09-02 20:04:42 | INFO | END producer.
