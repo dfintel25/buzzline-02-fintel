@@ -4,7 +4,7 @@
 import os
 import sys
 import time
-from datetime import datetime, timezone
+from datetime import datetime, timezone, time as dt_time
 from dotenv import load_dotenv
 
 from utils.utils_producer import (
@@ -29,7 +29,7 @@ def get_message_interval() -> int:
 
 def in_recording_window() -> bool:
     now = datetime.now(timezone.utc).time()
-    return datetime.time(0, 0) <= now <= datetime.time(6, 0)
+    return dt_time(0, 0) <= now <= dt_time(6, 0)
 
 
 def generate_messages(producer, topic, interval_secs, record_file="sent_messages.log"):
@@ -56,6 +56,7 @@ def generate_messages(producer, topic, interval_secs, record_file="sent_messages
                         f.write(f"{payload}\n")
                         f.flush()
 
+                    # Use standard time module sleep
                     time.sleep(interval_secs)
     except KeyboardInterrupt:
         logger.warning("Producer interrupted by user.")
