@@ -81,7 +81,7 @@ def generate_messages(producer, topic, interval_secs: int):
             # Log clean dict
             logger.info(f"Generated buzz: {payload}")
 
-            # ✅ Correct: send dict, Kafka serializer handles encoding
+            # Send dict, Kafka serializer handles encoding
             producer.send(topic, value=payload)
             logger.info(f"Sent message to topic '{topic}': {payload}")
 
