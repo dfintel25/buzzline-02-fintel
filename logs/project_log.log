@@ -257,3 +257,156 @@
 2025-09-03 18:28:32 | WARNING | Producer interrupted by user.
 2025-09-03 18:28:32 | INFO | Kafka producer closed.
 2025-09-03 18:28:32 | INFO | END producer.
+2025-09-03 18:50:06 | INFO | Logging to file: logs/project_log.log
+2025-09-03 18:50:06 | INFO | Log sanitization enabled, personal info will be removed
+2025-09-03 18:50:06 | INFO | START consumer.
+2025-09-03 18:50:06 | INFO | Kafka topic: buzzline
+2025-09-03 18:50:06 | INFO | Kafka consumer group id: default_group
+2025-09-03 18:50:06 | INFO | Consumer: Topic 'buzzline' and group 'default_group'...
+2025-09-03 18:50:06 | INFO | Kafka broker address: localhost:9092
+2025-09-03 18:50:06 | INFO | Creating Kafka consumer. Topic='buzzline' and group ID='default_group'.
+2025-09-03 18:50:06 | INFO | Kafka consumer created successfully.
+2025-09-03 18:50:06 | INFO | Polling messages from topic 'buzzline'...
+2025-09-03 18:50:06 | ERROR | Error while consuming messages: Invalid file descriptor: -1
+2025-09-03 18:50:06 | INFO | Kafka consumer for topic 'buzzline' closed.
+2025-09-03 18:50:06 | INFO | END consumer for topic 'buzzline' and group 'default_group'.
+2025-09-03 18:54:09 | INFO | Logging to file: logs/project_log.log
+2025-09-03 18:54:09 | INFO | Log sanitization enabled, personal info will be removed
+2025-09-03 18:54:09 | INFO | START producer.
+2025-09-03 18:54:09 | INFO | Loading environment variables from .env file...
+2025-09-03 18:54:09 | INFO | Kafka broker address: localhost:9092
+2025-09-03 18:54:10 | INFO | Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 1, 'host': 'localhost', 'port': 9092, 'rack': None}], 'cluster_id': '9kkXJrFlSGy2jdYknxxKCw', 'controller_id': 1}
+2025-09-03 18:54:10 | INFO | Kafka topic: buzzline
+2025-09-03 18:54:10 | INFO | Message interval: 1 seconds
+2025-09-03 18:54:10 | INFO | Kafka broker address: localhost:9092
+2025-09-03 18:54:10 | INFO | Connecting to Kafka broker at localhost:9092...
+2025-09-03 18:54:10 | INFO | Kafka producer successfully created.
+2025-09-03 18:54:10 | INFO | Kafka broker address: localhost:9092
+2025-09-03 18:54:10 | INFO | Topic 'buzzline' already exists. Clearing it out...
+2025-09-03 18:54:10 | INFO | Kafka broker address: localhost:9092
+2025-09-03 18:54:10 | ERROR | Error managing retention for topic 'buzzline': list indices must be integers or slices, not ConfigResource
+2025-09-03 18:54:10 | INFO | Kafka topic 'buzzline' is ready.
+2025-09-03 18:54:10 | INFO | Starting message production to topic 'buzzline'...
+2025-09-03 18:54:10 | INFO | Generated buzz: {'timestamp': '2025-09-03T23:54:10.976113+00:00', 'message': 'I love Python!'}
+2025-09-03 18:54:10 | ERROR | Error in message generation: Object of type bytes is not JSON serializable
+2025-09-03 18:54:10 | INFO | Kafka producer closed.
+2025-09-03 18:54:10 | INFO | END producer.
+2025-09-03 18:59:17 | INFO | Logging to file: logs/project_log.log
+2025-09-03 18:59:17 | INFO | Log sanitization enabled, personal info will be removed
+2025-09-03 18:59:17 | INFO | START producer.
+2025-09-03 18:59:17 | INFO | Loading environment variables from .env file...
+2025-09-03 18:59:17 | INFO | Kafka broker address: localhost:9092
+2025-09-03 18:59:18 | INFO | Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 1, 'host': 'localhost', 'port': 9092, 'rack': None}], 'cluster_id': '9kkXJrFlSGy2jdYknxxKCw', 'controller_id': 1}
+2025-09-03 18:59:18 | INFO | Kafka topic: buzzline
+2025-09-03 18:59:18 | INFO | Message interval: 1 seconds
+2025-09-03 18:59:18 | INFO | Kafka broker address: localhost:9092
+2025-09-03 18:59:18 | INFO | Connecting to Kafka broker at localhost:9092...
+2025-09-03 18:59:18 | INFO | Kafka producer successfully created.
+2025-09-03 18:59:18 | INFO | Kafka broker address: localhost:9092
+2025-09-03 18:59:18 | INFO | Topic 'buzzline' already exists. Clearing it out...
+2025-09-03 18:59:18 | INFO | Kafka broker address: localhost:9092
+2025-09-03 18:59:18 | ERROR | Error managing retention for topic 'buzzline': list indices must be integers or slices, not ConfigResource
+2025-09-03 18:59:18 | INFO | Kafka topic 'buzzline' is ready.
+2025-09-03 18:59:18 | INFO | Starting message production to topic 'buzzline'...
+2025-09-03 18:59:18 | INFO | Generated buzz: {'timestamp': '2025-09-03T23:59:18.847823+00:00', 'message': 'I love Python!'}
+2025-09-03 18:59:18 | ERROR | Error in message generation: Object of type bytes is not JSON serializable
+2025-09-03 18:59:18 | INFO | Kafka producer closed.
+2025-09-03 18:59:18 | INFO | END producer.
+2025-09-03 18:59:36 | INFO | Logging to file: logs/project_log.log
+2025-09-03 18:59:36 | INFO | Log sanitization enabled, personal info will be removed
+2025-09-03 18:59:36 | INFO | START consumer.
+2025-09-03 18:59:36 | INFO | Kafka topic: buzzline
+2025-09-03 18:59:36 | INFO | Kafka consumer group id: default_group
+2025-09-03 18:59:36 | INFO | Consumer: Topic 'buzzline' and group 'default_group'...
+2025-09-03 18:59:36 | INFO | Kafka broker address: localhost:9092
+2025-09-03 18:59:36 | INFO | Creating Kafka consumer. Topic='buzzline' and group ID='default_group'.
+2025-09-03 18:59:36 | INFO | Kafka consumer created successfully.
+2025-09-03 18:59:36 | INFO | Polling messages from topic 'buzzline'...
+2025-09-03 18:59:39 | ERROR | Failed to process message {"timestamp": "2025-09-03T01:29:49.343710+00:00", "message": "I love Python!"}: 'str' object has no attribute 'decode'
+2025-09-03 18:59:39 | ERROR | Failed to process message {"timestamp": "2025-09-03T01:29:50.352458+00:00", "message": "Kafka is awesome."}: 'str' object has no attribute 'decode'
+2025-09-03 18:59:39 | ERROR | Failed to process message {"timestamp": "2025-09-03T01:29:51.356709+00:00", "message": "Streaming data is fun."}: 'str' object has no attribute 'decode'
+2025-09-03 18:59:39 | ERROR | Failed to process message {"timestamp": "2025-09-03T01:29:52.360067+00:00", "message": "This is a buzz message."}: 'str' object has no attribute 'decode'
+2025-09-03 18:59:39 | ERROR | Failed to process message {"timestamp": "2025-09-03T01:29:53.363554+00:00", "message": "Have a great day!"}: 'str' object has no attribute 'decode'
+2025-09-03 18:59:39 | ERROR | Failed to process message {"timestamp": "2025-09-03T01:29:54.371626+00:00", "message": "I love Python!"}: 'str' object has no attribute 'decode'
+2025-09-03 18:59:39 | ERROR | Failed to process message {"timestamp": "2025-09-03T01:29:55.377130+00:00", "message": "Kafka is awesome."}: 'str' object has no attribute 'decode'
+2025-09-03 18:59:39 | ERROR | Failed to process message {"timestamp": "2025-09-03T01:29:56.380717+00:00", "message": "Streaming data is fun."}: 'str' object has no attribute 'decode'
+2025-09-03 18:59:39 | ERROR | Failed to process message {"timestamp": "2025-09-03T01:29:57.383666+00:00", "message": "This is a buzz message."}: 'str' object has no attribute 'decode'
+2025-09-03 18:59:39 | ERROR | Failed to process message {"timestamp": "2025-09-03T01:29:58.389477+00:00", "message": "Have a great day!"}: 'str' object has no attribute 'decode'
+2025-09-03 18:59:39 | ERROR | Failed to process message {"timestamp": "2025-09-03T01:29:59.394160+00:00", "message": "I love Python!"}: 'str' object has no attribute 'decode'
+2025-09-03 18:59:39 | ERROR | Failed to process message {"timestamp": "2025-09-03T01:30:00.397755+00:00", "message": "Kafka is awesome."}: 'str' object has no attribute 'decode'
+2025-09-03 18:59:39 | ERROR | Failed to process message {"timestamp": "2025-09-03T01:30:01.401819+00:00", "message": "Streaming data is fun."}: 'str' object has no attribute 'decode'
+2025-09-03 18:59:39 | ERROR | Failed to process message {"timestamp": "2025-09-03T01:30:02.406463+00:00", "message": "This is a buzz message."}: 'str' object has no attribute 'decode'
+2025-09-03 18:59:39 | ERROR | Failed to process message {"timestamp": "2025-09-03T01:30:03.411677+00:00", "message": "Have a great day!"}: 'str' object has no attribute 'decode'
+2025-09-03 18:59:39 | ERROR | Failed to process message {"timestamp": "2025-09-03T01:30:04.418633+00:00", "message": "I love Python!"}: 'str' object has no attribute 'decode'
+2025-09-03 18:59:39 | ERROR | Failed to process message {"timestamp": "2025-09-03T01:30:05.424187+00:00", "message": "Kafka is awesome."}: 'str' object has no attribute 'decode'
+2025-09-03 18:59:39 | ERROR | Failed to process message {"timestamp": "2025-09-03T01:30:06.429859+00:00", "message": "Streaming data is fun."}: 'str' object has no attribute 'decode'
+2025-09-03 18:59:39 | ERROR | Failed to process message {"timestamp": "2025-09-03T23:28:25.566115+00:00", "message": "I love Python!"}: 'str' object has no attribute 'decode'
+2025-09-03 18:59:39 | ERROR | Failed to process message {"timestamp": "2025-09-03T23:28:26.620204+00:00", "message": "Kafka is awesome."}: 'str' object has no attribute 'decode'
+2025-09-03 18:59:39 | ERROR | Failed to process message {"timestamp": "2025-09-03T23:28:27.622370+00:00", "message": "Streaming data is fun."}: 'str' object has no attribute 'decode'
+2025-09-03 18:59:39 | ERROR | Failed to process message {"timestamp": "2025-09-03T23:28:28.627269+00:00", "message": "This is a buzz message."}: 'str' object has no attribute 'decode'
+2025-09-03 18:59:39 | ERROR | Failed to process message {"timestamp": "2025-09-03T23:28:29.634292+00:00", "message": "Have a great day!"}: 'str' object has no attribute 'decode'
+2025-09-03 18:59:39 | ERROR | Failed to process message {"timestamp": "2025-09-03T23:28:30.639817+00:00", "message": "I love Python!"}: 'str' object has no attribute 'decode'
+2025-09-03 18:59:39 | ERROR | Failed to process message {"timestamp": "2025-09-03T23:28:31.643962+00:00", "message": "Kafka is awesome."}: 'str' object has no attribute 'decode'
+2025-09-03 19:01:47 | INFO | Logging to file: logs/project_log.log
+2025-09-03 19:01:47 | INFO | Log sanitization enabled, personal info will be removed
+2025-09-03 19:01:47 | INFO | START producer.
+2025-09-03 19:01:47 | INFO | Loading environment variables from .env file...
+2025-09-03 19:01:47 | INFO | Kafka broker address: localhost:9092
+2025-09-03 19:01:47 | INFO | Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 1, 'host': 'localhost', 'port': 9092, 'rack': None}], 'cluster_id': '9kkXJrFlSGy2jdYknxxKCw', 'controller_id': 1}
+2025-09-03 19:01:47 | INFO | Kafka topic: buzzline
+2025-09-03 19:01:47 | INFO | Message interval: 1 seconds
+2025-09-03 19:01:47 | INFO | Kafka broker address: localhost:9092
+2025-09-03 19:01:47 | INFO | Connecting to Kafka broker at localhost:9092...
+2025-09-03 19:01:47 | INFO | Kafka producer successfully created.
+2025-09-03 19:01:47 | INFO | Kafka broker address: localhost:9092
+2025-09-03 19:01:48 | INFO | Topic 'buzzline' already exists. Clearing it out...
+2025-09-03 19:01:48 | INFO | Kafka broker address: localhost:9092
+2025-09-03 19:01:48 | ERROR | Error managing retention for topic 'buzzline': list indices must be integers or slices, not ConfigResource
+2025-09-03 19:01:48 | INFO | Kafka topic 'buzzline' is ready.
+2025-09-03 19:01:48 | INFO | Starting message production to topic 'buzzline'...
+2025-09-03 19:01:48 | INFO | Generated buzz: {'timestamp': '2025-09-04T00:01:48.596264+00:00', 'message': 'I love Python!'}
+2025-09-03 19:01:48 | ERROR | Error in message generation: Object of type bytes is not JSON serializable
+2025-09-03 19:01:48 | INFO | Kafka producer closed.
+2025-09-03 19:01:48 | INFO | END producer.
+2025-09-03 19:04:21 | INFO | Logging to file: logs/project_log.log
+2025-09-03 19:04:21 | INFO | Log sanitization enabled, personal info will be removed
+2025-09-03 19:04:21 | INFO | START producer.
+2025-09-03 19:04:21 | INFO | Loading environment variables from .env file...
+2025-09-03 19:04:21 | INFO | Kafka broker address: localhost:9092
+2025-09-03 19:04:21 | INFO | Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 1, 'host': 'localhost', 'port': 9092, 'rack': None}], 'cluster_id': '9kkXJrFlSGy2jdYknxxKCw', 'controller_id': 1}
+2025-09-03 19:04:21 | INFO | Kafka topic: buzzline
+2025-09-03 19:04:21 | INFO | Message interval: 1 seconds
+2025-09-03 19:04:21 | INFO | Kafka broker address: localhost:9092
+2025-09-03 19:04:21 | INFO | Connecting to Kafka broker at localhost:9092...
+2025-09-03 19:04:22 | INFO | Kafka producer successfully created.
+2025-09-03 19:04:22 | INFO | Kafka broker address: localhost:9092
+2025-09-03 19:04:22 | INFO | Topic 'buzzline' already exists. Clearing it out...
+2025-09-03 19:04:22 | INFO | Kafka broker address: localhost:9092
+2025-09-03 19:04:22 | ERROR | Error managing retention for topic 'buzzline': list indices must be integers or slices, not ConfigResource
+2025-09-03 19:04:22 | INFO | Kafka topic 'buzzline' is ready.
+2025-09-03 19:04:22 | INFO | Starting message production to topic 'buzzline'...
+2025-09-03 19:04:22 | INFO | Generated buzz: {'timestamp': '2025-09-04T00:04:22.785574+00:00', 'message': 'I love Python!'}
+2025-09-03 19:04:22 | ERROR | Error in message generation: Object of type bytes is not JSON serializable
+2025-09-03 19:04:22 | INFO | Kafka producer closed.
+2025-09-03 19:04:22 | INFO | END producer.
+2025-09-03 19:06:01 | INFO | Logging to file: logs/project_log.log
+2025-09-03 19:06:01 | INFO | Log sanitization enabled, personal info will be removed
+2025-09-03 19:06:01 | INFO | START producer.
+2025-09-03 19:06:01 | INFO | Loading environment variables from .env file...
+2025-09-03 19:06:01 | INFO | Kafka broker address: localhost:9092
+2025-09-03 19:06:01 | INFO | Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 1, 'host': 'localhost', 'port': 9092, 'rack': None}], 'cluster_id': '9kkXJrFlSGy2jdYknxxKCw', 'controller_id': 1}
+2025-09-03 19:06:01 | INFO | Kafka topic: buzzline
+2025-09-03 19:06:01 | INFO | Message interval: 1 seconds
+2025-09-03 19:06:01 | INFO | Kafka broker address: localhost:9092
+2025-09-03 19:06:01 | INFO | Connecting to Kafka broker at localhost:9092...
+2025-09-03 19:06:01 | INFO | Kafka producer successfully created.
+2025-09-03 19:06:01 | INFO | Kafka broker address: localhost:9092
+2025-09-03 19:06:01 | INFO | Topic 'buzzline' already exists. Clearing it out...
+2025-09-03 19:06:01 | INFO | Kafka broker address: localhost:9092
+2025-09-03 19:06:02 | ERROR | Error managing retention for topic 'buzzline': list indices must be integers or slices, not ConfigResource
+2025-09-03 19:06:02 | INFO | Kafka topic 'buzzline' is ready.
+2025-09-03 19:06:02 | INFO | Starting message production to topic 'buzzline'...
+2025-09-03 19:06:02 | INFO | Generated buzz: {'timestamp': '2025-09-04T00:06:02.239139+00:00', 'message': 'I love Python!'}
+2025-09-03 19:06:02 | ERROR | Error in message generation: Object of type bytes is not JSON serializable
+2025-09-03 19:06:02 | INFO | Kafka producer closed.
+2025-09-03 19:06:02 | INFO | END producer.
