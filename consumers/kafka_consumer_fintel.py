@@ -47,10 +47,16 @@ def get_kafka_consumer_group_id() -> str:
 
 
 def handle_message(message):
-    """Decode and log Kafka messages."""
+    """Decode and log Kafka messages safely."""
     try:
-        payload = json.loads(message.value.decode("utf-8"))
+        # Kafka messages can be bytes or str
+        raw_value = message.value
+        if isinstance(raw_value, bytes):
+            raw_value = raw_value.decode("utf-8")
+
+        payload = json.loads(raw_value)
         logger.info(f"Consumed buzz: {payload}")
+
     except Exception as e:
         logger.error(f"Failed to decode Kafka message: {e}")
 
